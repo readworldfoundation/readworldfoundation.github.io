@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+	    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+
+    <style>
+      html, body {
+        height: 100%;
+        padding: 0;
+        margin: 0;
+      }
+      #map {
+        /* configure the size of the map */
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+		<script src="list.js" type="text/javascript"></script>
+
+    <script>
+
+		     // initialize Leaflet
+		      var map = L.map('map').setView({lon: 122.827, lat: 11.351}, 5);
+
+		      // add the OpenStreetMap tiles
+		      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		        maxZoom: 18,
+		        attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap contributors</a>'
+		      }).addTo(map);
+
+		      // show the scale bar on the lower left corner
+		      L.control.scale().addTo(map);
+
+					// show a marker on the map
+					//L.marker({lon: 124.827, lat: 11.20}).bindPopup('Alangalang').addTo(map);
+
+					function onEachFeature(feature, layer) {
+						var popupContent = "<p><b>ReadWorld Foundation Recipient</b></p>";
+
+						if (feature.properties && feature.properties.popupContent) {
+							popupContent += feature.properties.popupContent;
+						}
+
+						layer.bindPopup(popupContent);
+					}
+
+					L.geoJSON(recipientSchools, {
+
+						style: function (feature) {
+							return feature.properties && feature.properties.style;
+						},
+
+						onEachFeature: onEachFeature,
+
+						pointToLayer: function (feature, latlng) {
+							return L.circleMarker(latlng, {
+								radius: 8,
+								fillColor: "#ff7800",
+								color: "#000",
+								weight: 1,
+								opacity: 1,
+								fillOpacity: 0.8
+							});
+						}
+					}).addTo(map);
+
+
+    </script>
+  </body>
+</html>
