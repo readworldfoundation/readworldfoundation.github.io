@@ -474,6 +474,166 @@ var recipientSchools = {
             "properties": {
                 "popupContent": "Zumarraga National High School"
             }
+		},
+		{
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [120.9945138,14.6641995]
+            },
+            "properties": {
+                "popupContent": "Bagong Barrio Elementary School"
+            }
+		},
+		{
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [123.7937224,9.6261561]
+            },
+            "properties": {
+                "popupContent": "Bohol Island State University"
+            }
+		},
+		{
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [121.4561472,17.4500008]
+            },
+            "properties": {
+                "popupContent": "Bullaguian Elementary School"
+            }
+		},
+		{
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [120.8727568,14.1978162]
+            },
+            "properties": {
+                "popupContent": "Cavite State University College of Vet Med & Biomedical Sciences"
+            }
+		},
+		{
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [125.4378497,11.6027563]
+            },
+            "properties": {
+                "popupContent": "Eastern Samar National Comprehensive High School"
+            }
+		},
+		{
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [124.6805246,8.4762281]
+            },
+            "properties": {
+                "popupContent": "Gusa Elementary School"
+            }
+		},
+		{
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [120.4284471,16.1558815]
+            },
+            "properties": {
+                "popupContent": "Mabilao Elementary School"
+            }
+		},
+		{
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [120.4222181,16.1617277]
+            },
+            "properties": {
+                "popupContent": "Mabilao National High School"
+            }
+		},
+		{
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [120.5094184,18.0518605]
+            },
+            "properties": {
+                "popupContent": "Paoay National High School"
+            }
+		},
+		{
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [123.463017,7.9949993]
+            },
+            "properties": {
+                "popupContent": "Sapa Anding Agricultural Vocational School"
+            }
+		},
+		{
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [120.6807974,18.1324039]
+            },
+            "properties": {
+                "popupContent": "Suyo National High School"
+            }
+		},
+		{
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [126.1644754,9.2333389]
+            },
+            "properties": {
+                "popupContent": "Tag-anongan Elementary School"
+            }
+		},
+		{
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [121.1580849,13.9472446]
+            },
+            "properties": {
+                "popupContent": "Teodoro M Kalaw Memorial Library"
+            }
+		},
+		{
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [125.0303033,11.0591263]
+            },
+            "properties": {
+                "popupContent": "Tolosa National High School"
+            }
+		},
+		{
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [123.1879859,13.6164742]
+            },
+            "properties": {
+                "popupContent": "Triangulo Elementary School"
+            }
+		},
+		{
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [122.0883857,6.9157803]
+            },
+            "properties": {
+                "popupContent": "Zamboanga City High School"
+            }
 		}
     ]
 };
